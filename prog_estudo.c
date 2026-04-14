@@ -5,7 +5,7 @@
 
 int verifica_arquivo(FILE *pont_arq){
     /*
-    Função de verificação de sucesso ou não na abertura do arquivo
+    Funcao de verificacao de sucesso ou não na abertura do arquivo
     param pont_arq: ponteiro do arquivo a se verificar
     return: 1 em caso de falha ou 0 em caso de sucesso
     */
@@ -18,10 +18,13 @@ int verifica_arquivo(FILE *pont_arq){
 }
 
 void relat_estudo(){
+    /*
+    Funcao que lista em forma de relatorio os itens no arquivo
+    */
     limpa_tela();
     printf("\033[1mOPERANDO MODULO DE RELATORIO DE ESTUDOS\033[m\n");
     char materia[20];
-    char assunto[20];
+    char assunto[30];
     int minutos_estudo;
     char nome_arquivo[] = "projeto.txt";
     FILE *arquivo;
@@ -41,16 +44,19 @@ void relat_estudo(){
 }
 
 void add_estudo(){
+    /*
+    Funcao que adiciona os dados de um estudo no arquivo
+    */
     limpa_tela();
     printf("\033[1mOPERANDO MODULO DE ADICIONAR ESTUDO\033[m\n");
     char materia[20];
-    char assunto[20];
+    char assunto[30];
     int minutos_estudo;
     char nome_arquivo[] = "projeto.txt";
-    printf("\nMateria estudada: ");
+    printf("\nMateria estudada: (nao use barra de espaço, separe as palavras com '_') ");
     scanf("%s", materia);
     limpa_buffer();
-    printf("\nAssunto estudado: ");
+    printf("\nAssunto estudado: (nao use barra de espaço, separe as palavras com '_') ");
     scanf("%s", assunto);
     limpa_buffer();
     printf("\nMinutos estudados: ");
