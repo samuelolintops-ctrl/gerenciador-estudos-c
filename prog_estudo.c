@@ -24,7 +24,7 @@ void relat_estudo(){
     limpa_tela();
     printf("\033[1mOPERANDO MODULO DE RELATORIO DE ESTUDOS\033[m\n");
     char materia[20];
-    char assunto[30];
+    char assunto[40];
     int minutos_estudo;
     char nome_arquivo[] = "projeto.txt";
     FILE *arquivo;
@@ -50,7 +50,7 @@ void add_estudo(){
     limpa_tela();
     printf("\033[1mOPERANDO MODULO DE ADICIONAR ESTUDO\033[m\n");
     char materia[20];
-    char assunto[30];
+    char assunto[40];
     int minutos_estudo;
     char nome_arquivo[] = "projeto.txt";
     printf("\nMateria estudada: (nao use barra de espaço, separe as palavras com '_') ");
