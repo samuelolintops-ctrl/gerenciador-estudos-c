@@ -10,7 +10,6 @@ O sistema permite registrar matérias, assuntos e o tempo dedicado a cada estudo
 - Interface limpa via terminal com suporte a cores ANSI.
 
 ## Compilar e Rodar
-No Linux Mint, use o GCC:
 ```bash
 gcc main.c prog_estudo.c util.c -o programa
 ./programa
